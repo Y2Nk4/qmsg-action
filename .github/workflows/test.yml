@@ -15,4 +15,4 @@ jobs:
         with:
           qq: ${{ secrets.QMSG_NOTIFY_QQ }}
           key: ${{ secrets.QMSG_KEY }}
-          message: '${{ github.repository }} ${{ github.ref }} 针对 ${{ github.actor }} 的提交 ${{ github.sha }}(${{ github.event.head_commit.message }}) 的 ${{ github.action }} 任务部署完成'
+          message: '${{ github.actor }} 针对 ${{ github.repository }} ${{ github.ref }} 的提交 ${{ github.sha }} (${{ github.event.head_commit.message }}) 的 ${{ github.action }} 任务部署完成'

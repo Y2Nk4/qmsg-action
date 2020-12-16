@@ -8,7 +8,7 @@ let qq = core.getInput('qq'),
     groups = core.getInput('groups'),
     isIgnoreFailure = (core.getInput('ignoreFailure') || 'true') === 'true'
 
-if (!qq || !groups) {
+if (!qq && !groups) {
     core.error('Either qq or groups need to be set in order to send message.')
     return actions.setFailed(JSON.stringify({ error: 'Either qq or groups need to be set in order to send message.' }))
 }
