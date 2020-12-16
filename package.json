@@ -1,0 +1,24 @@
+{
+  "name": "qmsg-action",
+  "version": "1.0.0",
+  "description": "An GitHub Action to send notification via QMsg",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "ncc build src/index.js -o dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Y2Nk4/qmsg-action.git"
+  },
+  "author": "y2nk4 <1147678303@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Y2Nk4/qmsg-action/issues"
+  },
+  "homepage": "https://github.com/Y2Nk4/qmsg-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@zeit/ncc": "^0.22.3",
+    "request": "^2.88.2"
+  }
+}

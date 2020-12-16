@@ -10,6 +10,16 @@ inputs:
   key:
     description: 'QMsg Secret Key'
     required: true
+  message:
+    description: 'QMsg Content'
+    required: true
+  ignoreFailure:
+    description: 'Continue the Action if an error occurred. Pass `true` if ignore'
+    required: false
+    default: 'true'
 outputs:
   response:
     description: 'HTTP Response Content from QMsg API'
+runs:
+  using: node12
+  main: dist/index.js
