@@ -1,4 +1,4 @@
-# qmsg-action
+# QMsg-Action
 An GitHub Action to send notification via QMsg
 
 ### 使用案例
