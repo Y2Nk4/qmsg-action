@@ -19248,7 +19248,7 @@ if (groups) {
     )
 }
 
-jobs.then((result) => {
+Promise.all(jobs).then((result) => {
     return actions.setOutput('response', JSON.stringify(result))
 }).catch(error => {
     if (isIgnoreFailure) {
