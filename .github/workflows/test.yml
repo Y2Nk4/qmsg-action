@@ -1,0 +1,18 @@
+name: Test
+
+on: [push, pull_request]
+
+jobs:
+  request:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Request Postment Echo GET
+        uses: ./
+        with:
+          qq: ${{ secrets.QMSG_NOTIFY_QQ }}
+          key: ${{ secrets.QMSG_KEY }}
+          message: '${{ github.repository }} ${{ github.ref }} 针对 ${{ github.actor }} 的提交 ${{ github.sha }}(${{ github.event.head_commit.message }}) 的 ${{ github.action }} 任务部署完成'
