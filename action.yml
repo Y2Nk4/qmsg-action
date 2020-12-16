@@ -1,7 +1,8 @@
 name: 'QMsg Action'
 description: 'To send notification via QMsg'
-color: blue
-icon: message-square
+branding:
+  icon: 'message-square'  
+  color: 'blue'
 inputs:
   qq:
     description: 'List of QQ that you want to send, seperate by `,` for multiple qq accounts'
