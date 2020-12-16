@@ -4,12 +4,15 @@ An GitHub Action to send notification via QMsg
 ### 使用案例
 ```yaml
 - name: Send A Notification Message
-  uses: ./
+  uses: Y2Nk4/qmsg-action@master
     with:
       qq: ${{ secrets.QMSG_NOTIFY_QQ }}
       key: ${{ secrets.QMSG_KEY }}
       message: '${{ github.actor }} 针对 ${{ github.repository }} ${{ github.ref }} 的提交 ${{ github.sha }} (${{ github.event.head_commit.message }}) 的 ${{ github.workflow }} 任务部署完成'
 ```
+
+若要使用项目仓库中的版本，使用 `Y2Nk4/qmsg-action@master`。
+若需要使用稳定版则可以使用 `Y2Nk4/qmsg-action@{Release版本号}`
 
 详细实例可以参考本项目的 [Test Action](.github/workflows/test.yml)
 
