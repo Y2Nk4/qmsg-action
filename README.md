@@ -34,7 +34,7 @@ Optional
 
 接收推送的QQ群号，多个QQ群号时，使用`,`进行分隔
 
-#### `message` 🔐
+#### `message`
 Required
 
 推送的消息，可以使用环境变量
@@ -44,7 +44,7 @@ Required
 message: '${{ github.actor }} 针对 ${{ github.repository }} ${{ github.ref }} 的提交 ${{ github.sha }} (${{ github.event.head_commit.message }}) 的 ${{ github.workflow }} 任务部署完成'
 ```
 
-#### `ignoreFailure` 🔐
+#### `ignoreFailure`
 Optional|default: 'true'
 
 是否忽略错误以执行下一步CI操作，指定为 `true` 的时候会忽略错误
