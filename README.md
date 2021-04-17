@@ -1,5 +1,5 @@
 # QMsg-Action
-An GitHub Action to send notification via QMsg
+An GitHub Action to send notification via [QMsg - Zendee](https://qmsg.zendee.cn/)
 
 ### 使用案例
 ```yaml
